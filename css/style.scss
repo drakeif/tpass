@@ -1,0 +1,53 @@
+@import 'modules/fonts';
+@import 'modules/vars';
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: $main;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    &.active {
+        overflow: hidden;
+    }
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container {
+    display: block;
+    max-width: 113rem;
+    min-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+h1 {
+    font-size: 5.5rem;
+    line-height: 1.5;
+    @include media(768) {
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+    @include media(768) {
+        font-size: 3.5rem;
+        line-height: 1;
+    }
+    @include media(500) {
+        font-size: 3rem;
+    }
+}
+@import 'modules/header';
+@import 'modules/intro';

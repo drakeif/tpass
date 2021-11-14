@@ -1,0 +1,132 @@
+.header {
+    padding: 3rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $body;
+    @include media(768) {
+        padding: 2rem 0;
+    }
+    @include media(500) {
+        padding: 1rem 0;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        @include media(500) {
+            width: 10rem;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        column-gap: 6rem;
+        @include media(768) {
+            display: none;
+            &.active {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                row-gap: 3rem;
+                padding: 2rem;
+                background-color: $body;
+                border: .1rem solid $main;
+                position: absolute;
+                top: 100%;
+                right: 5%;
+                z-index: 10;
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $main;
+        font-size: 1.4rem;
+        font-weight: 700;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__btn {
+        display: none;
+        outline: none;
+        border: none;
+        width: 4rem;
+        height: 4rem;
+        background-color: $main;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: $tr;
+        span {
+            display: block;
+            position: absolute;
+            left: 20%;
+            height: 0.1px;
+            background-color: $wh;
+            pointer-events: none;
+            transition: $tr;
+            &:nth-child(1) {
+                top: 35%;
+                width: 50%;
+            }
+            &:nth-child(2) {
+                top: 50%;
+                width: 70%;
+                opacity: 1;
+            }
+            &:nth-child(3) {
+                top: 65%;
+                width: 25%;
+            }
+        }
+        @include media(768) {
+            display: block;
+        }
+        &:hover {
+            background-color: $accent;
+            span {
+                &:nth-child(1) {
+                    left: 15%;
+                    top: 50%;
+                    width: 70%;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    left: 15%;
+                    top: 50%;
+                    width: 70%;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        &.active {
+            background-color: $accent;
+            span {
+                &:nth-child(1) {
+                    left: 15%;
+                    top: 50%;
+                    width: 70%;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    left: 15%;
+                    top: 50%;
+                    width: 70%;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
