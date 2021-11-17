@@ -1,5 +1,17 @@
 @import 'modules/fonts';
 @import 'modules/vars';
+*::-webkit-scrollbar {
+    width: 7px;
+}
+*::-webkit-scrollbar-track {
+    background: $wh; 
+}
+*::-webkit-scrollbar-thumb {
+    background: $accent;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: $orange; 
+}
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -23,7 +35,7 @@ body {
 }
 img {
     display: inline-block;
-    max-width: 100%;
+    //max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
@@ -50,6 +62,15 @@ h1 {
     }
 }
 h2 {
+    font-size: 4rem;
+    @include media(768) {
+        font-size: 3rem;
+    }
+    @include media(500) {
+        font-size: 2.2rem;
+    } 
+}
+h3 {
     font-size: 2.5rem;
     @include media(768) {
         font-size: 2.2rem;
@@ -60,6 +81,7 @@ h2 {
 }
 p {
     color: $light;
+    line-height: 1.5;
     @include media(500) {
         font-size: 1.4rem;
     }
@@ -67,3 +89,4 @@ p {
 @import 'modules/header';
 @import 'modules/intro';
 @import 'modules/features';
+@import 'modules/howitworks';

@@ -1,0 +1,82 @@
+.howitworks {
+    padding: 5rem 0;
+    @include media(768) {
+        padding: 4rem 0;
+    }
+    @include media(500) {
+        padding: 3rem 0;
+    }
+    &__inner {
+        position: relative;
+        padding: 0 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+        &::after {
+            content: '';
+            display: block;
+            background-color: $body;
+            width: 100%;
+            height: 80%;
+            border-radius: 5rem;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: -3;
+        }
+        @include media(500) {
+            padding: 0;
+            &::after {
+                height: 110%;
+            }
+        }
+    }
+    &__pictures {
+        position: relative;
+        width: 50%;
+        height: 64rem;
+        img {
+            position: absolute;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            &:nth-child(2) {
+                top: 85%;
+                left: 40%;
+                z-index: 2;
+            }
+            &:nth-child(3) {
+                top: 20%;
+                left: -15%;
+                z-index: -1;
+            }
+        }
+        @include media(500) {
+            display: none;
+        }
+    }
+    &__about {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        @include media(768) {
+            row-gap: 2rem;
+            padding: 3rem;
+            border-radius: 3rem;
+            background-color: rgba($main, .9);
+            color: $wh;
+            z-index: 3;
+            p {
+                color: rgba($wh, .6);
+            }
+        }
+        @include media(500) {
+            width: 100%;
+        }
+    }
+}
