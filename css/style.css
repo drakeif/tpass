@@ -477,4 +477,92 @@ p {
       .howitworks__about {
         width: 100%; } }
 
+.gifts {
+  padding: 5rem 0; }
+  @media only screen and (max-width: 768px) {
+    .gifts {
+      padding: 4rem 0; } }
+  @media only screen and (max-width: 500px) {
+    .gifts {
+      padding: 3rem 0; } }
+  .gifts__inner {
+    position: relative;
+    padding: 0 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem; }
+    .gifts__inner::after {
+      content: '';
+      display: block;
+      background-color: #f5f6f7;
+      width: 100%;
+      height: 80%;
+      border-radius: 5rem;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      z-index: -3; }
+    @media only screen and (max-width: 500px) {
+      .gifts__inner {
+        padding: 0; }
+        .gifts__inner::after {
+          height: 110%; } }
+  .gifts__pictures {
+    position: relative;
+    width: 50%;
+    height: 64rem; }
+    .gifts__pictures img {
+      position: absolute; }
+      .gifts__pictures img:nth-child(1) {
+        top: 0;
+        right: 0;
+        z-index: 1; }
+      .gifts__pictures img:nth-child(2) {
+        top: 85%;
+        right: 50%;
+        z-index: -1; }
+        @media only screen and (max-width: 900px) {
+          .gifts__pictures img:nth-child(2) {
+            z-index: 2; } }
+      .gifts__pictures img:nth-child(3) {
+        top: 30%;
+        right: -20%;
+        z-index: -1; }
+    @media only screen and (max-width: 500px) {
+      .gifts__pictures {
+        display: none; } }
+  .gifts__about {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 3rem; }
+    @media only screen and (max-width: 768px) {
+      .gifts__about {
+        row-gap: 2rem;
+        padding: 3rem;
+        border-radius: 3rem;
+        background-color: rgba(15, 35, 54, 0.9);
+        color: #ffffff;
+        z-index: 3; }
+        .gifts__about p {
+          color: rgba(255, 255, 255, 0.6); } }
+    @media only screen and (max-width: 500px) {
+      .gifts__about {
+        width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */
