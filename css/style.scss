@@ -35,7 +35,6 @@ body {
 }
 img {
     display: inline-block;
-    //max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
@@ -90,5 +89,5 @@ p {
 @import 'modules/intro';
 @import 'modules/features';
 @import 'modules/howitworks';
-
+@import 'modules/offer';
 @import 'modules/gifts';

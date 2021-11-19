@@ -1,10 +1,10 @@
 .gifts {
-    padding: 5rem 0;
+    padding: 10rem 0 5rem;
     @include media(768) {
-        padding: 4rem 0;
+        padding: 6rem 0 4rem;
     }
     @include media(500) {
-        padding: 3rem 0;
+        padding: 4rem 0 3rem;
     }
     &__inner {
         position: relative;
@@ -53,9 +53,9 @@
                 }
             }
             &:nth-child(3) {
-                top: 30%;
-                right: -20%;
-                z-index: -1;
+                top: 45%;
+                right: 0%;
+                z-index: 2;
             }
         }
         @include media(500) {

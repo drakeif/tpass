@@ -50,9 +50,9 @@
                 z-index: 2;
             }
             &:nth-child(3) {
-                top: 20%;
-                left: -15%;
-                z-index: -1;
+                top: 50%;
+                left: 0%;
+                z-index: 2;
             }
         }
         @include media(500) {
