@@ -1,0 +1,84 @@
+.shop {
+    padding: 5rem 0 0;
+    @include media(500) {
+        padding: 3rem 0 0;
+    }
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    &__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        @include media(500) {
+            row-gap: 1rem;
+        }
+        h2 {
+            max-width: 52rem;
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 900;
+            @include media(768) {
+                font-size: 4rem;
+            }
+            @include media(500) {
+                font-size: 3rem;
+            }
+        }
+        form {
+            input {
+                outline: none;
+                border: none;
+                padding: 1.5rem 10rem;
+                background-color: $bg;
+                color: $light;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 1.4rem;
+                text-align: center;
+                &::placeholder {
+                    color: $light;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                }
+                @include media(768) {
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            button {
+                outline: none;
+                border: none;
+                padding: 1.5rem 5rem;
+                background-color: $accent;
+                color: $wh;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 1.4rem;
+                cursor: pointer;
+                transition: $tr;
+                &:hover {
+                    background-color: $orange;
+                }
+                @include media(768) {
+                    width: 100%;
+                }
+            }
+        }
+        &_social {
+            align-self: flex-start;
+            @include media(500) {
+                align-self: center;
+            }
+            img {
+                @include media(500) {
+                    width: 14rem;
+                }
+            }
+        }
+    }
+    
+}

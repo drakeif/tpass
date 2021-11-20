@@ -633,4 +633,104 @@ p {
       .gifts__about {
         width: 100%; } }
 
+.shop {
+  padding: 5rem 0 0; }
+  @media only screen and (max-width: 500px) {
+    .shop {
+      padding: 3rem 0 0; } }
+  .shop__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .shop__about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 2rem; }
+    @media only screen and (max-width: 500px) {
+      .shop__about {
+        row-gap: 1rem; } }
+    .shop__about h2 {
+      max-width: 52rem;
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 900; }
+      @media only screen and (max-width: 768px) {
+        .shop__about h2 {
+          font-size: 4rem; } }
+      @media only screen and (max-width: 500px) {
+        .shop__about h2 {
+          font-size: 3rem; } }
+    .shop__about form input {
+      outline: none;
+      border: none;
+      padding: 1.5rem 10rem;
+      background-color: #E3E6E8;
+      color: #576D81;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      text-align: center; }
+      .shop__about form input::-webkit-input-placeholder {
+        color: #576D81;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.4rem; }
+      .shop__about form input:-ms-input-placeholder {
+        color: #576D81;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.4rem; }
+      .shop__about form input::-ms-input-placeholder {
+        color: #576D81;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.4rem; }
+      .shop__about form input::placeholder {
+        color: #576D81;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.4rem; }
+      @media only screen and (max-width: 768px) {
+        .shop__about form input {
+          width: 100%;
+          margin-bottom: 0.5rem; } }
+    .shop__about form button {
+      outline: none;
+      border: none;
+      padding: 1.5rem 5rem;
+      background-color: #00CCCC;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      cursor: pointer;
+      -webkit-transition: 0.2s linear;
+      transition: 0.2s linear; }
+      .shop__about form button:hover {
+        background-color: #F8A644; }
+      @media only screen and (max-width: 768px) {
+        .shop__about form button {
+          width: 100%; } }
+    .shop__about_social {
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+      @media only screen and (max-width: 500px) {
+        .shop__about_social {
+          -ms-flex-item-align: center;
+              align-self: center; } }
+      @media only screen and (max-width: 500px) {
+        .shop__about_social img {
+          width: 14rem; } }
+
 /*# sourceMappingURL=style.css.map */
