@@ -74,6 +74,11 @@
                 align-self: center;
             }
             img {
+                cursor: pointer;
+                transition: $tr;
+                &:hover {
+                    transform: translateY(-1rem);
+                }
                 @include media(500) {
                     width: 14rem;
                 }

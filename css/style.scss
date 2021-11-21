@@ -45,6 +45,9 @@ img {
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+.wrapper {
+    overflow: hidden;
+}
 h1 {
     font-size: 5.5rem;
     line-height: 1.5;
@@ -92,3 +95,4 @@ p {
 @import 'modules/offer';
 @import 'modules/gifts';
 @import 'modules/shop';
+@import 'modules/footer';
