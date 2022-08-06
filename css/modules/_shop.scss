@@ -1,7 +1,7 @@
 .shop {
-    padding: 5rem 0 0;
+    padding: 5rem 0 5rem;
     @include media(500) {
-        padding: 3rem 0 0;
+        padding: 3rem 0 3rem;
     }
     &__inner {
         display: flex;

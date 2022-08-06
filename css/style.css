@@ -637,10 +637,10 @@ p {
         width: 100%; } }
 
 .shop {
-  padding: 5rem 0 0; }
+  padding: 5rem 0 5rem; }
   @media only screen and (max-width: 500px) {
     .shop {
-      padding: 3rem 0 0; } }
+      padding: 3rem 0 3rem; } }
   .shop__inner {
     display: -webkit-box;
     display: -ms-flexbox;
